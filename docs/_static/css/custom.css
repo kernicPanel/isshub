@@ -1,3 +1,7 @@
+/* Hide "View page source" link (because it links to source used for search) */
+.wy-breadcrumbs-aside {
+	display: none !important;
+}
 /* Package owning the current package/module, placed at the top right of the current package/module */
 .package-owner {
 	float: right;
