@@ -29,6 +29,13 @@ p.rubric.package-sub + .toctree-wrapper {
 	margin-left: 6px;
 	padding-top: 6px;
 }
+/* Hide class attributes because they are duplicate of the class vars found by napoleon plugins
+and those vars are more detailed.
+Side effect: If attributes are not defined in docstrings, they won't appear at all.
+ */
+dl.class > dd > dl.field-list ~ dl.attribute {
+	display: None;
+}
 /* Add emphasis to the first line of docstring of packages and modules */
 .package-or-module-title + .section > span.target:first-of-type + p,  /* package with no content */
 .package-or-module-title + .section > span + h1:first-of-type + p, /* package with content */

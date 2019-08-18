@@ -92,6 +92,7 @@ html_use_old_search_snippets = True
 
 # -- Run apidoc when building the documentation-------------------------------
 
+napoleon_use_ivar = True
 add_module_names = False
 
 
