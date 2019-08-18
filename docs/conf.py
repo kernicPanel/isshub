@@ -106,6 +106,8 @@ def run_apidoc(_):
             "--force",
             "--module-first",
             "--separate",
+            "--doc-project",
+            "Packages",
             "--output-dir",
             source_path,
             output_path,
